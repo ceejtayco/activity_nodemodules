@@ -10,12 +10,19 @@ app.listen(4000, function() {
     console.log("Listen to port 4000");
 });
 
+var exchange_rates = "";
 app.post('/getCurrency', function (req, res) {
     apiData = req;
     res.json({
         status: 'success',
         message: 'Caitlyn Jules Tayco'
     });
+    exchange_rates = apiData.body.rates;
+    console.log(exchange_rates);
+});
 
-    console.log(apiData);
+app.get('/endpoint', function(req, res){
+    res.json({
+        data: exchange_rates
+    });
 });
