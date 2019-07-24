@@ -16,3 +16,6 @@ IT Elective 4 lab activity
 #pushing to repository
 # git push origin master
 
+
+# ===UPDATED====
+# Lab activity 1 server, 2 clients. 1 client (POST) other client (GET).
